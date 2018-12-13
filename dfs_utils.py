@@ -18,6 +18,8 @@ def dk_contest_select(user, password, contest):
     """
     options = Options()
     options.add_argument("--start-maximized")
+    # prefs = {'download.default_directory': 'C:/Users/aaron/dev/dfs_output'}
+    # options.add_experimental_option('prefs', prefs)
     driver = webdriver.Chrome(chrome_options=options)
     driver.get("https://www.draftkings.com/")
 
